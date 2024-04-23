@@ -51,4 +51,11 @@ func messageHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 	if m.Content == config.BotPrefix+"Sauce" {
 		_, _ = s.ChannelMessageSend(m.ChannelID, "Executing command Sauce")
 	}
+
+	if m.Author.ID == "142335378064408585"{
+		_, _ = s.ChannelMessageSend(m.ChannelID, "Ta gueule")
+	}
+	if m.Author.ID == "303133529485869058"{
+		_, _ = s.ChannelMessageSend(m.ChannelID, "Tu es hystérique, vas te calmer")
+	}
 }
