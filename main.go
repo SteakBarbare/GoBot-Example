@@ -8,13 +8,14 @@ import (
 )
 
 func main() {
+	fmt.Println("Bipute")
 	err := config.LoadConfig()
 
 	if(err != nil){
 		fmt.Println(err.Error())
 		return
 	}
-
+	fmt.Println("Tripute")
 	bot.Start()
 
 	<-make(chan struct{})
